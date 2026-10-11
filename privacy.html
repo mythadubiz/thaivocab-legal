@@ -90,10 +90,10 @@
     </div>
 
     <div class="container">
-        <p class="meta">Last updated: April 20, 2026</p>
+        <p class="meta">Last updated: October 11, 2026</p>
 
         <div class="highlight">
-            <strong>Summary:</strong> ThaiVocab does not collect, store, or share any personal data. The app has no servers, no analytics, no advertising, and no third-party trackers. Everything you do stays on your device (and optionally in your own private iCloud).
+            <strong>Summary:</strong> ThaiVocab does not collect, store, or share any personal data. There are no accounts, no advertising, no advertising ID and no tracking across apps or websites. Your progress stays on your device (and optionally in your own private iCloud). The only thing the app can send anywhere is a set of <strong>anonymous usage statistics</strong> — and only if you <strong>say yes</strong> when asked (see <a href="#analytics">section 7</a>). It is off until you do.
         </div>
 
         <h2>1. Introduction</h2>
@@ -105,7 +105,7 @@
             <li>No names, email addresses, or contact information</li>
             <li>No location data</li>
             <li>No device identifiers or advertising IDs</li>
-            <li>No usage analytics or tracking</li>
+            <li>No tracking, and no usage statistics unless you opt in (see <a href="#analytics">section 7</a>)</li>
             <li>No cookies or similar technologies</li>
             <li>No microphone, camera, or photo access</li>
             <li>No crash reports sent to us</li>
@@ -143,21 +143,30 @@
         <h2>6. Audio Narration</h2>
         <p>Every word is accompanied by a pre-recorded audio clip that ships inside the app bundle. Playing these clips happens entirely on your device; the App does not stream audio from any server and never uploads any audio.</p>
 
-        <h2>7. Third-Party Services</h2>
-        <p>The App does not integrate any analytics, advertising, or tracking SDKs. The only third-party services used are Apple's own:</p>
+        <h2 id="analytics">7. Anonymous Usage Statistics (Optional) and Third-Party Services</h2>
+        <p>The first time you open ThaiVocab, the app asks whether you agree to share <strong>anonymous usage statistics</strong>. They help us see which lessons help and which ones lose people, so we can improve the App.</p>
+        <ul>
+            <li><strong>Off by default.</strong> Nothing is sent until you tap <em>Share statistics</em>. You can change your mind at any time in <em>Settings → Anonymous statistics</em>; switching it off stops all sending immediately.</li>
+            <li><strong>What is sent</strong>, if you accept: technical events such as “app opened”, “screen viewed”, “feature used”, “onboarding completed”, “purchase screen shown”, “purchase completed”, plus the app language, device model, iOS version, and country derived from your IP address by the provider. Purchases are reported with their price and currency for revenue statistics.</li>
+            <li><strong>What is never sent</strong>: your name, email, contacts, location, advertising identifier, or your personal word lists and progress. Nothing sent identifies you to us, and nothing is used for advertising or shared with data brokers.</li>
+            <li><strong>How long it is kept</strong>: event-level statistics are retained by Google Firebase for the retention window configured on our Analytics property, which is <strong>at most 14 months</strong>; only aggregated, non-identifying reports are kept beyond it. Because nothing sent identifies you or your device to us, we cannot single out “your” statistics to retrieve or erase them individually — switching the setting off stops all sending immediately.</li>
+            <li><strong>Provider</strong>: these statistics are processed by <strong>Google Firebase Analytics</strong> (without advertising-identifier support), on Google's servers, under <a href="https://firebase.google.com/support/privacy">Google's privacy terms</a>.</li>
+        </ul>
+        <p>The App contains no advertising SDKs and no cross-app tracking libraries. The external services involved are:</p>
         <ul>
             <li><strong>Apple StoreKit</strong> — for processing the in-app purchase</li>
             <li><strong>Apple CloudKit / iCloud</strong> — for optional synchronization of your own preferences and progress</li>
+            <li><strong>Google Firebase Analytics</strong> — <strong>only if you opted in</strong> to anonymous usage statistics (see above)</li>
         </ul>
 
         <h2>8. Children's Privacy</h2>
-        <p>The App contains no advertising, no external links, no social features, no chat, and no data collection. It is safe for users of any age who are studying Thai. We do not knowingly collect personal information from anyone, including children under 13.</p>
+        <p>The App contains no advertising, no external links, no social features and no chat. Anonymous usage statistics are optional and contain nothing that identifies a person. We do not knowingly collect personal information from anyone, including children under 13.</p>
 
         <h2>9. Data Retention</h2>
-        <p>Since we do not collect any data, there is nothing for us to retain. Local data (preferences, streaks, quiz counter) stays on your device — and optionally in your own iCloud — until you delete it from within the App or remove the App entirely.</p>
+        <p>We keep no personal data. Local data (preferences, streaks, quiz counter) stays on your device — and optionally in your own iCloud — until you delete it from within the App or remove the App entirely. Optional anonymous usage statistics are retained as described in <a href="#analytics">section 7</a>.</p>
 
         <h2>10. Your Rights</h2>
-        <p>Because we do not collect any personal data, most data-subject rights (access, portability, erasure) are fully within your control: uninstalling the App and signing out of iCloud removes every trace of your use of the App. You can also reset your streaks and quiz counter at any time from Settings.</p>
+        <p>Because we do not collect any personal data, most data-subject rights (access, portability, erasure) are fully within your control: uninstalling the App and signing out of iCloud removes your data. You can switch anonymous statistics off at any time in Settings, and reset your streaks and quiz counter there too. For any privacy request, write to <a href="mailto:mythadubiz@gmail.com">mythadubiz@gmail.com</a>.</p>
 
         <h2>11. Changes to This Policy</h2>
         <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated "Last updated" date. We encourage you to review this page periodically.</p>
